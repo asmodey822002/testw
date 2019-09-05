@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Test">
+	<meta name="keywors" content="test">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<title>Test</title>
+</head>
+<body class="min-vw-100 min-vh-100">
+	<div class="container">
+		<div class="row h-100 justify-content-center no-gutters">
+			<div class="col-md-8 align-self-center content-container" id="contentContainer">
+				<div class="row" id="graffity">
+					<div class="col-md-3 h-100">
+					</div>
+					<div class="col-md-7 align-self-center text-right">
+						<b>Login To Your Account / Register New</b>
+					</div>
+					<div class="col-md-2 h-100"></div>
+				</div>
+				<div class="row" id="my-form">
+					<div class="card col-md-12 align-self-start h-100">
+						<div class="row card-header text-light">
+							<div class="col-md-2">
+						    <div class="rounded-circle text-center" id="element"><b><i class="fa fa-pencil-square-o" aria-hidden="true"></i></b></div>
+							</div>
+							<div class="col-md-10 align-self-center" id="text-cart-header">
+						    	<b>Login To Your Account / Register New</b>
+						    </div>
+						</div>
+						<div class="row card-body">
+						    <div class="col-md-6">
+						    	<div class="row justify-content-center h-25">
+						    		<div class="col-md-3 align-self-center hr-line"><hr></div>
+						    		<div class="col-md-2 align-self-center circle-slesh">
+						    			<div class="rounded-circle text-center" id="slesh"><b>/</b></div>
+						    		</div>
+						    		<div class="col-md-3 align-self-center hr-line"><hr></div>
+						    	</div>
+						    	<div class="row h-50">
+						    		<form id="formLogin">
+						    			<div class="form-group row justify-content-center">
+						    				<div class="col-md-10">
+      											<input type="text" class="form-control form-control-lg" name="inputUserNameLogin" id="inputUserNameLogin" placeholder="User Name">
+   											</div>
+						    			</div>
+						    			<div class="form-group row justify-content-center">
+						    				<div class="col-md-10">
+      											<input type="password" class="form-control form-control-lg" name="inputPasswordLogin" id="inputPasswordLogin" placeholder="Password">
+   											</div>
+						    			</div>
+						    			<div class="form-group row justify-content-center">
+										    <div class="col-md-6 align-self-center">
+										      <div class="form-check">
+										        <input class="form-check-input" type="checkbox" id="gridCheck">
+										        <label class="form-check-label" for="gridCheck" id="formCheckHover">
+										          Remember My password
+										        </label>
+										      </div>
+										    </div>
+										    <div class="col-md-4 align-self-center">
+										    	<button type="submit" class="btn" id="buttonLogin">Login</button>
+										    </div>
+										</div>
+						    		</form>
+						    	</div>
+						    </div>
+						    <div class="col-md-6 reg-div">
+						    	<div class="row justify-content-start h-20 reg-div-label">
+						    		<div class="col-md-1"></div>
+						    		<div class="col-md-10 align-self-center reg"><b>Register</b></div>
+						    		<div class="col-md-1"></div>
+						    	</div>
+						    	<div class="row h-80">
+						    		<form id="formRegister">
+						    			<div class="form-group row justify-content-center">
+						    				<div class="col-md-10">
+						    					<label for="inputUserEmailRegister">Email</label>
+      											<input type="email" class="form-control form-control-md" name="inputUserEmailRegister" id="inputUserEmailRegister">
+   											</div>
+						    			</div>
+						    			<div class="form-group row justify-content-center">
+						    				<div class="col-md-10">
+						    					<label for="inputUserNameRegistr">User Name</label>
+      											<input type="text" class="form-control form-control-md" name="inputUserNameRegistr" id="inputUserNameRegistr">
+   											</div>
+						    			</div>
+						    			<div class="form-group row justify-content-center">
+						    				<div class="col-md-10">
+						    					<label for="inputPasswordRegistr">Password</label>
+      											<input type="password" class="form-control form-control-md" name="inputPasswordRegistr" id="inputPasswordRegistr">
+   											</div>
+						    			</div>
+						    			<div class="form-group row justify-content-center">
+										    <div class="col-md-5 align-self-center">
+										    </div>
+										    <div class="col-md-5 align-self-center">
+										    	<button type="submit" class="btn" id="buttonRegistr">Register</button>
+										    </div>
+										</div>
+						    		</form>
+						    	</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="row ui-state-hovered" id="hover-check">
+					<div class="col-md-6">You no longer need to enter a password every time you use the site</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>
