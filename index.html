@@ -41,7 +41,7 @@
 						    		<div class="col-3 align-self-center hr-line" id="hrLineRight"><hr></div>
 						    	</div>
 						    	<div class="row" id="rowFormLogin">
-						    		<form id="formLogin">
+						    		<form id="formLogin" class="needs-validation" novalidate>
 						    			<div class="form-group row justify-content-center">
 						    				<div class="col-10">
       											<input type="text" class="form-control form-control-lg" name="inputUserNameLogin" id="inputUserNameLogin" placeholder="User Name" required>
@@ -73,7 +73,7 @@
 						    		<div class="col-10 align-self-center reg"><b>Register</b></div>
 						    	</div>
 						    	<div class="row" id="rowFormRegister">
-						    		<form id="formRegister">
+						    		<form id="formRegister" class="needs-validation" novalidate>
 						    			<div class="form-group row justify-content-center">
 						    				<div class="col-10">
 						    					<label for="inputUserEmailRegister">Email</label>
@@ -114,6 +114,24 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 	<script src="js/script.js"></script>
+
+	<script>
+	(function() {
+	  'use strict';
+	  window.addEventListener('load', function() {
+	    var forms = document.getElementsByClassName('needs-validation');
+	    var validation = Array.prototype.filter.call(forms, function(form) {
+	      form.addEventListener('submit', function(event) {
+	        if (form.checkValidity() === false) {
+	          event.preventDefault();
+	          event.stopPropagation();
+	        }
+	        form.classList.add('was-validated');
+	      }, false);
+	    });
+	  }, false);
+	})();
+	</script>
 
 </body>
 </html>
