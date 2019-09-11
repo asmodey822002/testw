@@ -3,7 +3,7 @@
     src: url(../sourcesanspro/sourcesanspro.ttf);
    }
 @font-face {
-    font-family: myriadpro;
+    font-family: Myriad Pro;
     src: url(../myriadpro/MyriadPro-Regular.ttf);
    }
 input::-webkit-input-placeholder {
@@ -18,361 +18,197 @@ input::-moz-placeholder {  /* Firefox 19+ */
 input:-ms-input-placeholder {  
 	color: #e9e9e9 !important;  
 }
-hr{
-	color: #bbbbbb;
-	width: 100%;
-	size: 2px;
-	padding: 0;
-}
-form {
-	width: 100%;
-}
-button {
-	width: 100%;
-	font-family: "Source Sans Pro";
-}
-#hoverCheck {
-	position: absolute;
-	z-index: 9;
-}
-#hoverCheck>div {
-	background-color: white;
-	border-radius: 10px;
-	border: 1px solid #e1e1e1;
-	color: #e1e1e1;
-	font-family: "myriadpro";
-}
-#buttonLogin {
-	background: linear-gradient(to bottom right, #004c6c, #4fb6e2);
-	color: white;
-	border: none;
-}
-#buttonRegistr {
-	background: linear-gradient(to bottom right, #aa7800, #ffb400);
-	color: white;
-	border: none;
-	width: 50%;
-	margin-left: 50%;
-}
-#graffity {
-	height: 20%;
-	color: #b0b0b0;
-}
-#myForm {
-	height: 80%;
-}
-#textCartHeader {
-	padding: 0;
-}
-#element {
-	background-color: #259cb1;
-}
-#slesh {
-	background-color: #eaeaea;
-	border: 1px solid #bbbbbb;
-	color: #bbbbbb;
-}
-#rowFormLogin {
-	height: 50%;
-}
-#rowFormRegister {
-	height: 80%;
-}
-#formLogin {
-	color: #bbbbbb;
-}
-#formRegister {
-	color: #ababab;
-	border-left: 1px solid #bbbbbb;
-}
-#circleSleshHead {
-	height: 25%;
-}
-.container {
-    background-image: url(../images/3.png);
+body {
+	background-image: url(../images/3.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 90%;
-    height: 100vh;
-    font-family: "Source Sans Pro";
 }
-#contentContainer {
+.container-fluid {
+    height: 100vh;
+    padding: 0;
+}
+#graffity {
+	font-size: 28px;
+	line-height: 91px;
+	color: #b0b0b0;
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+}
+#contentConteiner {
+	width: 827px;
+}
+#myForm {
+	width: 827px;
+	height: 603px;
+	border-radius: 10px;
+	border: 1px solid #cecece;
+}
+#element {
+	width: 74px;
+	height: 74px;
+	border-radius: 37px;
+	background-color: #259cb1;
+	padding: 19px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+#headerText {
+	font-size: 34px;
+	line-height: 91px;
+	color: #ffffff;
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+}
+#regLabel {
+	width: 356px;
+	font-size: 20px;
+	line-height: 50px;
+	color: #676767;
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+}
+#rowFormRegister {
+	border-left: 1px solid rgba(0,0,0,0.1);
+	padding-left: 15px;
+}
+#formRegister>.form-group>.col-12>label {
+	font-size: 16px;
+	color: #676767;
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+}
+#formRegister>.form-group>.col-12>input {
+	width: 356px;
+	height: 51px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+#buttonRegistr {
+	font-size: 22px;
+	color: #ffffff;
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+	width: 152px;
+	height: 48px;
+	border-radius: 10px;
+	background-image: linear-gradient(-30deg, #ffb300 0%, #aa7700 100%);
+}
+#parentButtonRegistr {
+	text-align: right;
+}
+#slesh {
+	font-size: 17px;
+	color: #bbbbbb;
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+	width: 33px;
+	height: 33px;
+	border-radius: 17px;
+	background-color: #eaeaea;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 3px;
+	margin-top: -44px;
+	z-index: 4;
+}
+#formLogin>.form-group>.col-12>input {
+	width: 356px;
+	height: 61px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	border: 1px solid rgba(0,0,0,0.1);
+	margin-left: 20px;
+}
+#buttonLogin {
+	font-size: 22px;
+	color: #ffffff;
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+	width: 152px;
+	height: 48px;
+	border-radius: 10px;
+	background-image: linear-gradient(-30deg, #4fb5e1 0%, #004b6c 100%);
+}
+#circleSleshHr {
+	height: 81px;
+}
+#parentButtonLogin {
+	padding-left: 2px;
+}
+#formCheckHover {
+	font-size: 14px;
+	color: #cbcbcb;
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+}
+#parentCheckRemember{
+	padding-left: 35px;
+}
+#hoverCheck {
+	font-size: 14px;
+	color: #cbcbcb;
+	font-family: "Myriad Pro";
+	width: 256px;
+	height: 61px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+	background-color: #ffffff;
+	position: absolute;
+	z-index: 9;
+	left: -10%;
+	top: 74%;
+}
+#parentHoverCheck {
 	position: relative;
 }
-.card-header {
-	background-color: #34b7ce;
+.fa-pencil-square-o {
+	font-size: 35px;
 	color: #ffffff;
 }
 .card {
 	background-color: #f5f5f5;
-	border-radius: 10px;
 }
-.circle-slesh, .hr-line {
-	padding: 0;
-}
-#regDivLabel {
-	height: 17%;
-}
-.reg {
-	padding: 0;
-	color: #838383;
+.card-header {
+	background-color: rgba(52,183,206,0.6588235294117647);
 }
 .ui-state-hovered {
 	display: none;
 }
 
-/* >= 1200px */
-@media (min-width: 1200px) {
+/* <=827px */
+@media (max-width: 827px) {
 	#hoverCheck {
-		left: -10%;
-		top: 80%;
-	}
-	#hoverCheck>div {
-		width: 256px;
-		height: 61px;
-		padding: 13px;
-		font-size: 14px;
-	}
-	#buttonLogin {
-		font-size: 22px;
-	}
-	#buttonRegistr {
-		font-size: 22px;
-	}
-	#graffity {
-		font-size: 28px;
-	}
-	#textCartHeader {
-		font-size: 34px;
-	}
-	#element {
-		width: 74px;
-		height: 74px;
-		padding: 15%;
-		font-size: 35px;
-	}
-	#slesh {
-		width: 33px;
-		height: 33px;
-		padding: 10%;
-		font-size: 17px;
-	}
-	#formCheckHover{
-		font-size: 14px;
-	}
-	#contentContainer {
-		width: 740px;
-		height: 680px;
-	}
-	.reg {
-		font-size: 20px;
+		left: 5px;
 	}
 }
-/* >= 768px <= 1199px */
-@media (min-width: 768px) and (max-width: 1199px) {
-	#formCheckHover{
-		font-size: 10px;
-	}
-	#buttonLogin {
-			font-size: 12px;
-		}
-	#buttonRegistr {
-			font-size: 12px;
-		}
-	#slesh {
-		width: 33px;
-		height: 33px;
-		padding: 10%;
-		font-size: 17px;
-	}
-	#hrLineRight {
-		padding-left: 15px;
-	}
-	#element {
-		width: 54px;
-		height: 54px;
-		padding: 25%;
-		font-size: 20px;
-	}
+/* >=828 <= 838px */
+@media (min-width: 828px) and (max-width: 838px) {
 	#hoverCheck {
-		left: -10%;
-		top: 80%;
-	}
-	#hoverCheck>div {
-		width: 256px;
-		height: 61px;
-		padding: 12px;
-		font-size: 14px;
-	}
-	#contentContainer {
-		height: 600px;
-	}
-
-}
-/* >=576 <= 767px */
-@media (min-width: 576px) and (max-width: 767px) {
-	#element {
-		width: 33px;
-		height: 33px;
-		padding: 25%;
-		font-size: 15px;
-	}
-	#buttonLogin {
-			font-size: 10px;
-		}
-	#buttonRegistr {
-			font-size: 10px;
-		}
-	#formCheckHover{
-		font-size: 7px;
-	}
-	#hoverCheck {
-		left: -10%;
-		top: 80%;
-	}
-	#hoverCheck>div {
-		width: 200px;
-		height: 80px;
-		padding: 12px;
-		font-size: 14px;
-	}
-	#contentContainer {
-		height: 600px;
-	}
-	#slesh {
-		width: 33px;
-		height: 33px;
-		padding: 10%;
-		font-size: 17px;
-		margin-left: -10px;
-	}
-	#hrLineRight {
-		padding-left: 9px;
+		left: 0;
 	}
 }
-/* >=400 <= 575px */
-@media (min-width: 400px) and (max-width: 575px) {
-	label {
-		font-size: 10px;
-	}
-	#contentContainer {
-		height: 500px;
-	}
-	.card-header {
-		padding-left: 0;
-		padding-right: 0;
-
-	}
-	#regDivLabel {
-		height: 23px;
-	}
-	.card-body {
-		padding-top: 0;
-	}
-	#circleSleshHead {
-		height: 53px;
-	}
-	#graffity {
-		font-size: 10px;
-	}
-	#textCartHeader {
-		font-size: 10px;
-	}
-	#element {
-		width: 20px;
-		height: 20px;
-		padding: 10%;
-		font-size: 12px;
-	}
-	#slesh {
-		width: 20px;
-		height: 20px;
-		padding: 10%;
-		font-size: 10px;
-		margin-left: -5px;
-	}
-	#hrLineRight {
-		padding-left: 6px;
-	}
-	#buttonLogin {
-			font-size: 10px;
-		}
-	#buttonRegistr {
-			font-size: 10px;
-			width: 100%;
-			margin-left: 0;
-		}
+/* >=839 <= 890px */
+@media (min-width: 839px) and (max-width: 890px) {
 	#hoverCheck {
-		left: -12%;
-		top: 82%;
-	}
-	#hoverCheck>div {
-		width: 150px;
-		height: 80px;
-		padding: 12px;
-		font-size: 14px;
+		left: -10px;
 	}
 }
-/* >=320 <= 399px */
-@media (min-width: 320px) and (max-width: 399px) {
-	label {
-		font-size: 10px;
-	}
-	#contentContainer {
-		height: 500px;
-	}
-	.card-header {
-		padding-left: 0;
-		padding-right: 0;
-
-	}
-	#regDivLabel {
-		height: 23px;
-	}
-	.card-body {
-		padding-top: 0;
-	}
-	#circleSleshHead {
-		height: 53px;
-	}
-	#graffity {
-		font-size: 10px;
-	}
-	#textCartHeader {
-		font-size: 10px;
-	}
-	#element {
-		width: 20px;
-		height: 20px;
-		padding: 25%;
-		font-size: 12px;
-	}
-	#slesh {
-		width: 20px;
-		height: 20px;
-		padding: 10%;
-		font-size: 10px;
-		margin-left: -5px;
-	}
-	#hrLineRight {
-		padding-left: 6px;
-	}
-	#buttonLogin {
-			font-size: 10px;
-		}
-	#buttonRegistr {
-			font-size: 10px;
-			width: 100%;
-			margin-left: 0;
-		}
+/* >=891 <= 920px */
+@media (min-width: 891px) and (max-width: 920px) {
 	#hoverCheck {
-		left: -12%;
-		top: 82%;
+		left: -30px;
 	}
-	#hoverCheck>div {
-		width: 150px;
-		height: 80px;
-		padding: 12px;
-		font-size: 14px;
+}
+/* >=921 <= 970px */
+@media (min-width: 921px) and (max-width: 970px) {
+	#hoverCheck {
+		left: -50px;
+	}
+}
+/* >=971 <= 1000px */
+@media (min-width: 971px) and (max-width: 1000px) {
+	#hoverCheck {
+		left: -70px;
 	}
 }
