@@ -12,95 +12,91 @@
 	
 	<title>Test</title>
 </head>
-<body class="min-vw-100 min-vh-100">
-	<div class="container-fluid">
-		<div class="row h-100 mx-auto" id="contentConteiner">
-			<div class="col-12 align-self-center" id="parentHoverCheck">
-				<div class="row" id="graffity">
-					<div class="col-12 text-right">
-						Login To Your Account / Register New
-					</div>
+<body class="container-fluid">
+	<div class="row">
+		<div class="col-12 text-right" id="graffity">
+			Login To Your Account / Register New
+		</div>
+	</div>
+	<div class="row" id="myForm">
+		<div class="card col-12">
+			<div class="row card-header">
+				<div class="col-12">
+					<div class="rounded-circle" id="element"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div> <span id="headerText">Login To Your Account / Register New</span>
 				</div>
-				<div class="row" id="myForm">
-					<div class="card col-12">
-						<div class="row card-header">
-							<div class="col-12">
-								<div class="rounded-circle text-center" id="element"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div> <span id="headerText">Login To Your Account / Register New</span>
-							</div>
+			</div>
+			<div class="row card-body">
+				<div class="col-6 data-parentForm">
+					<div class="row" id="circleSleshHr">
+						<div class="col-12">
+						<div class="h-100"><hr></div>
+						<div class="rounded-circle text-center mx-auto" id="slesh">/</div>
 						</div>
-						<div class="row card-body">
-							<div class="col-6">
-								<div class="row" id="circleSleshHr">
-									<div class="col-12 align-self-center"><hr></div>
-									<div class="rounded-circle text-center mx-auto" id="slesh">/</div>
-								</div>
-								<div class="row" id="rowFormLogin">
-							    	<form id="formLogin" class="needs-validation" novalidate>
-							    		<div class="form-group row">
-							    			<div class="col-12">
-	      										<input type="text" class="form-control" placeholder="User Name" required>
-	   										</div>
-							    		</div>
-							    		<div class="form-group row">
-							    			<div class="col-12">
-	      										<input type="password" class="form-control" placeholder="Password" required>
-	   										</div>
-							    		</div>
-							    		<div class="form-group row">
-										    <div class="col-7" id="parentCheckRemember">
-										      <div class="form-check">
-										        <input class="form-check-input" type="checkbox" id="gridCheck">
-										        <label class="form-check-label" for="gridCheck" id="formCheckHover">
-										          Remember My password
-										        </label>
-										      </div>
-										    </div>
-										    <div class="col-5">
-										    	<button type="submit" class="btn" id="buttonLogin">Login</button>
-										    </div>
-										</div>
-							    	</form>
+					</div>
+					<div class="row" id="rowFormLogin">
+					   	<form id="formLogin" class="needs-validation" novalidate>
+					   		<div class="form-group row">
+					   			<div class="col-12">
+		      						<input type="text" class="form-control" placeholder="User Name" required>
+		   						</div>
+					   		</div>
+					   		<div class="form-group row">
+					   			<div class="col-12">
+		      						<input type="password" class="form-control" placeholder="Password" required>
+		   						</div>
+					   		</div>
+					   		<div class="form-group row">
+							    <div class="col-7" id="parentCheckRemember">
+							      <div class="form-check">
+								        <input class="form-check-input" type="checkbox" id="gridCheck">
+								        <label class="form-check-label" for="gridCheck" id="formCheckHover">
+								          Remember My password
+								        </label>
+							      </div>
+							      <div class="row ui-state-hovered" id="hoverCheck">
+										<div class="col-12 align-self-center">You no longer need to enter a password every time you use the site</div>
+								  </div>
+							    </div>
+							    <div class="col-5" id="parentButtonLogin">
+							    	<button type="submit" class="btn" id="buttonLogin">Login</button>
 							    </div>
 							</div>
-							<div class="col-6">
-								<div class="row" id="regLabel">
-									<div class="col-12">
-										Register
-									</div>
-								</div>
-								<div class="row" id="rowFormRegister">
-						    		<form id="formRegister" class="needs-validation" novalidate>
-						    			<div class="form-group row">
-						    				<div class="col-12">
-						    					<label for="inputUserEmailRegister">Email</label>
-      											<input type="email" class="form-control" id="inputUserEmailRegister" required>
-   											</div>
-						    			</div>
-						    			<div class="form-group row">
-						    				<div class="col-12">
-						    					<label for="inputUserNameRegistr">User Name</label>
-      											<input type="text" class="form-control" id="inputUserNameRegistr" required>
-   											</div>
-						    			</div>
-						    			<div class="form-group row">
-						    				<div class="col-12">
-						    					<label for="inputPasswordRegistr">Password</label>
-      											<input type="password" class="form-control" id="inputPasswordRegistr" required>
-   											</div>
-						    			</div>
-						    			<div class="row">
-										    <div class="col-12" id="parentButtonRegistr">
-										    	<button type="submit" class="btn" id="buttonRegistr">Register</button>
-										    </div>
-										</div>
-						    		</form>
-						    	</div>
-							</div>
-						</div>
+					   	</form>
 					</div>
 				</div>
-				<div class="row ui-state-hovered" id="hoverCheck">
-					<div class="col-12 align-self-center">You no longer need to enter a password every time you use the site</div>
+				<div class="col-6 data-parentForm">
+					<div class="row" id="regLabel">
+						<div class="col-12 h-100">
+							Register
+						</div>
+					</div>
+					<div class="row" id="rowFormRegister">
+						<form id="formRegister" class="needs-validation" novalidate>
+							<div class="form-group row">
+								<div class="col-12">
+									<label for="inputUserEmailRegister">Email</label>
+      								<input type="email" class="form-control" id="inputUserEmailRegister" required>
+   								</div>
+							</div>
+						    <div class="form-group row">
+						    	<div class="col-12">
+						    		<label for="inputUserNameRegistr">User Name</label>
+      								<input type="text" class="form-control" id="inputUserNameRegistr" required>
+   								</div>
+						    </div>
+						    <div class="form-group row">
+						    	<div class="col-12">
+						    		<label for="inputPasswordRegistr">Password</label>
+      								<input type="password" class="form-control" id="inputPasswordRegistr" required>
+   								</div>
+						    </div>
+						    <div class="row">
+							    <div class="col-12" id="parentButtonRegistr">
+							    	<button type="submit" class="btn" id="buttonRegistr">Register</button>
+							    </div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
